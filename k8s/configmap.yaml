@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: travelo-config
+  namespace: travelo
+data:
+  MYSQL_DATABASE: "travelo_db"
+  DB_HOST: "mysql"
+  DB_PORT: "3306"
+  SPRING_DATASOURCE_URL: "jdbc:mysql://mysql:3306/travelo_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC"
